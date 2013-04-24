@@ -1,0 +1,42 @@
+<html>
+<head>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/jquery.hotkeys.js"></script>
+    <script src="javascripts/richtext.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div class="row">
+            <div>
+                <div class="richtextbuttons">
+                    <ul>
+                        <li class="richbtn"><button onclick="formatText('bold');">B</button></li>
+                        <li class="richbtn"><button onclick="formatText('italic');">I</button></li>
+                        <li class="richbtn seperator"><button onclick="formatText('underline');">U</button></li>
+                        <li class="richbtn">Font Size</li>
+                        <li class="richbtn">
+                            <select onchange="formatText('FontSize',this.selectedIndex + 1);" name="fontSize">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3" selected>3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+                        </li>
+                        <li class="richbtn seperator"><button onclick="var color=prompt('Please enter font color (full hash)');formatText('ForeColor',color);">Color</button></li>
+                        <li class="richbtn"><button onclick="var url=prompt('Please enter the URL');formatText('CreateLink',url);">Link</button></li>
+                        <li class="richbtn seperator"><button onclick="formatText('Unlink');">Unlink</button></li>
+                        <li class="richbtn"><button onclick="formatText('InsertUnorderedList');">UL</button></li>
+                        <li class="richbtn"><button onclick="formatText('InsertOrderedList');">OL</button></li>
+                    </ul>
+                </div>
+                <div class="richtext" contenteditable>
+                </div>   
+            </div>
+        </div>
+    </div>
+</body>
+</html>

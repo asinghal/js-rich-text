@@ -1,0 +1,19 @@
+body {
+    background-color: #eee;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#page { width: 90%; padding: 10px; margin: 24px auto; border: 2px #EEE solid; height: 800px; box-shadow: 5px 5px 5px #CCC; background: #FFF; overflow: auto;}
+
+textarea { min-height: 100px;}
+select { width: 30%; font-size: 2em;}
+
+.richtext { border: #EEE solid 1px; min-height: 20em; padding: 1em; }
+.richtextbuttons { margin-bottom: 0.3em; min-height: 1.5em; background-color: #F3F3F3; padding: 0.5em;}
+.richtextbuttons ul { list-style: none; padding: 0px; margin: 0px;}
+.richtextbuttons ul li { float: left; cursor: hand; cursor: pointer; }
+
+.richtextbuttons ul li select { width: 40px;}
+
+.richtextbuttons .richbtn { padding: 0.2em; }
+.richtextbuttons .seperator { border-right: 1px solid #ccc;}
